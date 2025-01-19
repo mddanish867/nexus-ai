@@ -2,7 +2,7 @@
 const Feature = () => {
   return (
     <div>
-        <section id="features" className="py-20 px-4">
+        <section id="features" className="py-20">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
             Revolutionary Features
