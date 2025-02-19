@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState } from "react"
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
     <nav className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-lg border-b border-white/10 z-50">
       <div className="flex flex-col w-full">
@@ -10,11 +10,8 @@ const Navbar = () => {
           <div className="text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
             NexusAI
           </div>
-          
-          <button
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+
+          <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -23,23 +20,19 @@ const Navbar = () => {
               )}
             </svg>
           </button>
-          
+
           <div className="hidden md:flex space-x-8">
             {["Features", "About", "Pricing", "Contact"].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="relative font-medium text-lg group"
-              >
+              <a key={item} href={`#${item.toLowerCase()}`} className="relative font-medium text-lg group">
                 {item}
                 <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 transition-all group-hover:w-full"></span>
               </a>
             ))}
           </div>
         </div>
-        
+
         {isMenuOpen && (
-          <div className="min-h-screen md:hidden px-4 pb-4">
+          <div className="md:hidden px-4 pb-4">
             {["Features", "About", "Pricing", "Contact"].map((item) => (
               <a
                 key={item}
@@ -53,7 +46,8 @@ const Navbar = () => {
         )}
       </div>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
+
