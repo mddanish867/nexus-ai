@@ -32,7 +32,8 @@ const Navbar = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden px-4 pb-4">
+          <div className="min-h-screen md:hidden px-4 pb-4 text-center">
+            
             {["Features", "About", "Pricing", "Contact"].map((item) => (
               <a
                 key={item}

@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="relative pt-24 pb-20">
+    <section className="relative pt-40 pb-20">
       <div className="container mx-auto text-center px-4">
         <div className="relative inline-block">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient-x">
