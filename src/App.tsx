@@ -5,6 +5,7 @@ import { CodeSmellsAnalysis } from "./components/analysis/CodeSmellsAnalysis"
 import { Login } from "./components/auth/Login"
 // import { MFAPopup } from "./components/auth/MFAPopup"
 import { Register } from "./components/auth/Register"
+import UserDropdown from "./components/auth/UserDropdown"
 import { ActivityFeed } from "./components/dashboard/ActivityFeed"
 import { SummaryMetrics } from "./components/dashboard/MetricCard"
 import { Navbar } from "./components/dashboard/Navbar"
@@ -52,6 +53,7 @@ function App() {
    <UnitTestSummary/>
    <ErrorBoundary/>
    <Loader/>
+   <UserDropdown/>
   </>
   )
 }
